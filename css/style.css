@@ -1,0 +1,204 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  max-width: 1300px;
+  border: 0px solid #222;
+  margin: 0px auto;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffece4;
+}
+
+.menu {
+  background-color: #6870b1;
+  height: 100%;
+}
+
+.menu__body {
+  max-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.menu__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__element {
+  margin: 10px 40px;
+  border: 2px solid black;
+  padding: 20px 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 29px;
+  background-color: #f8f8f8;
+  text-decoration: none;
+}
+
+.menu__element_active {
+  margin: 10px 40px;
+  border: 2px solid black;
+  padding: 20px 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 29px;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #103310;
+  width: 1000px;
+  height: 650px;
+}
+
+.app__body {
+  margin: auto 10px auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10%;
+}
+
+.app__menu {
+  text-align: center;
+  background-color: #20b2aa;
+  width: 300px;
+  height: 300px;
+  padding-top: 40px;
+}
+
+.app__menu button {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: #40c781;
+  -webkit-box-shadow: 0 -3px #35a76e inset;
+          box-shadow: 0 -3px #35a76e inset;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.app__menu button:hover {
+  background: #35a76e;
+}
+
+.app__menu button:active {
+  background: #21935a;
+  -webkit-box-shadow: 0 3px #21935a inset;
+          box-shadow: 0 3px #21935a inset;
+}
+
+.app__book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #daa520;
+  width: 700px;
+  min-height: 650px;
+}
+
+.app__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.app__radio p {
+  margin: 20px 60px;
+  text-align: center;
+  display: inline-block;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.app__booklist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app__booklistfav li {
+  background-color: #aaff00;
+}
+
+.app__booklistdef {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app h2 {
+  text-align: center;
+  background: #77f7de;
+  color: black;
+  letter-spacing: 0.1em;
+}
+/*# sourceMappingURL=style.css.map */

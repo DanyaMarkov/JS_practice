@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JS практика</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="menu">
+        <div class="menu__body container">
+            <div class="menu__col">
+
+                <a href="#" class="menu__element_active""> 
+                    Записная книжка
+                </a>
+
+                <a href="#" class="menu__element""> 
+                    Калькулятор
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="app" >
+        <div class="app__body">
+            <div class="app__menu">
+
+                    Имя
+                <input v-model="name" type="text" id="inputName" placeholder="Николай">
+                    <br><br>
+
+                    Фамилия  
+                <input v-model="surname" type="text" id="inputSurname" placeholder="Иванов"> 
+                    <br><br>
+
+                    Отчество
+                <input v-model="otchestvo" type="text" id="inputOtchestvo" placeholder="Олегович"> 
+                    <br><br>
+
+                    Телефон
+                <input v-model="number" type="text" id="inputNumber" placeholder="88003448383">
+                    <br><br>
+
+                    Избранный 
+                <input v-model="checked" type="checkbox" name="a" value="1934">
+                    <br><br>
+                    <button id="add" v-on:click="addmember()"> Добавить</button> 
+            
+                </div>
+
+                <div class="app__book">
+                    <h2> Записная книжка : </h2>
+
+                    <div class="app__radio">
+                        <form action="">
+                        <p><input checked v-model = "radioB" v-on:click="SortNames()" id="radNam" 
+                            name="sort" type="radio" value="name"> 
+                            По имени
+                        </p>
+
+                        <p><input v-model = "radioB" v-on:click="SortSurnames()" id="radSur" 
+                            name="sort" type="radio" value="surname">
+                            По фамилии
+                        </p>
+
+                        
+                        </form>
+                    </div>
+                    <div class="app__booklist">
+                        <ul v-html="fav" class="app__booklistfav"></ul>
+                        <ul v-html="def" class="app__booklistdef"> </ul>
+                    </div>
+                    
+                   	
+                </div>
+        </div>
+    </div>
+    
+</body>
+<script src="js/script.js"></script>
+
+</html>
