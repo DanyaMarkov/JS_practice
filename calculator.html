@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JS практика</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="menu">
+        <div class="menu__body container">
+            <div class="menu__col">
+
+                <a href="index.html" class="menu__element"> 
+                    Записная книжка (Vue)
+                </a>
+
+                <a href="calculator.html" class="menu__element_active"> 
+                    Калькулятор
+                </a>
+
+                <a href="#" class="menu__element""> 
+                    Блок FAQ
+                </a>
+
+                <a href="#" class="menu__element""> 
+                    Калькулятор
+                </a>
+
+                <a href="#" class="menu__element""> 
+                    Калькулятор
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Калькулятор -->
+    <div class="calculator">
+        <div class="calculator__body container">
+            <div class="calculator__input">
+                <input id="inputStroke" type="text" placeholder="0" value="" readonly>
+            </div>
+
+            <div class="calculator__buttons">
+                <div class="calculator__numbers numbers">
+                    <div class="numbers__element" id="num" onclick="addNumber(1)">1</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(2)">2</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(3)">3</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(4)">4</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(5)">5</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(6)">6</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(7)">7</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(8)">8</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(9)">9</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(0)">0</div>
+                    <div class="numbers__element" id="num" onclick="addNumber(00)">00</div>
+                    <div class="numbers__element" id="num" onclick="addNumber('.')">.</div>
+                </div>
+                <div class="calculator__operations operations">
+                    <div class="operations__element" onclick="addOperation(/)">/</div>
+                    <div class="operations__element" onclick="deleteInput()">C</div>
+                    <div class="operations__element" onclick="addOperation(X)">X</div>
+                    <div class="operations__element" onclick="delete()"> ← </div>
+                    <div class="operations__element" onclick="addOperation(1)">+</div>
+                    <div class="operations__element" onclick="addOperation(1)">-</div>
+                    <div class="operations__element" onclick="getEqual()">=</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>

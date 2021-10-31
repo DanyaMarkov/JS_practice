@@ -244,8 +244,13 @@ body {
         width: 14%;
         border-radius: 15px;
     }
+
+    &__element:hover {
+        background-color: rgb(43, 93, 112);
+        cursor: pointer;
+    }
 }
 
-.element:hover {
-    background-color: darksalmon;
-}
+// .element:hover {
+//     background-color: darksalmon;
+// }

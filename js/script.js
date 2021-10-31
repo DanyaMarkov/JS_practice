@@ -99,4 +99,52 @@ window.onload = function () {
 
 };
 
+let inputStroke = "";
+//console.log(inputStroke);
+
+let currentOperation = "";
+//console.log(currentOperation);
+
+//document.getElementsByID('inputStroke').innerHTML += 
+
+function addNumber(input) {
+
+    // const $elem = document.querySelector('.numbers__element');
+
+
+    // const text = $elem.innerText;
+
+    //alert(text);
+
+    //let include = document.getElementById('num').innerHTML;
+    //alert(include);
+
+    switch (input) {
+        case '.':
+
+    }
+    currentOperation = "";
+
+    inputStroke += input;
+
+    document.getElementById('inputStroke').value = inputStroke;
+
+    console.log(inputStroke);
+}
+
+function addOperation(input) {
+    currentOperation = ""
+}
+
+
+
+
+function deleteInput() {
+    currentOperation = "";
+    inputStroke = "";
+    document.getElementById('inputStroke').value = inputStroke;
+
+    console.log(inputStroke);
+}
+
 

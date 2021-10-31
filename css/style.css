@@ -315,7 +315,8 @@ body {
   border-radius: 15px;
 }
 
-.element:hover {
-  background-color: darksalmon;
+.operations__element:hover {
+  background-color: #2b5d70;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
