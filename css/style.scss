@@ -20,9 +20,11 @@ body {
     background-color: rgb(255, 236, 228);
 }
 
+//Записная книжка
 .menu {
     background-color: rgb(104, 112, 177);
     height: 100%;
+    //display: none;
     &__body {
         max-height: 200px;
         display: flex;
@@ -58,19 +60,22 @@ body {
             color: white;
         }
     }
-}
 
-// #app {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     background-color: #103310;
-//     width: 1000px;
-//     height: 650px;
-// }
+    &__element:hover {
+        margin: 10px 40px;
+        border: 2px solid black;
+        padding: 20px 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 29px;
+        background-color: rgb(99, 67, 67);
+        color: white;
+        text-decoration: none;
+    }
+}
 
 .app {
     display: flex;
+
     align-items: center;
     justify-content: center;
     background-color: #103310;
@@ -160,4 +165,87 @@ body {
 
         letter-spacing: 0.1em;
     }
+}
+
+//Калькулятор
+
+.calculator {
+    background-color: cadetblue;
+    max-height: 600px;
+    margin-top: 10%;
+    &__body {
+        //margin-top: 30%;
+        display: flex;
+        flex-direction: column;
+        min-width: 40%;
+        align-items: center;
+        max-width: 600px;
+    }
+
+    &__input {
+        padding: 30px;
+
+        input {
+            padding: 20px;
+            width: 80%;
+            color: black;
+            font-size: large;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__numbers {
+        background-color: chartreuse;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        flex-wrap: wrap;
+
+        width: 50%;
+    }
+
+    &__operations {
+        background-color: darkkhaki;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+}
+
+.numbers {
+    &__element {
+        display: flex;
+        align-items: center;
+        background-color: rgb(105, 105, 179);
+        padding: 20px;
+        color: whitesmoke;
+        margin: 5px;
+
+        width: 14%;
+        border-radius: 15px;
+    }
+}
+
+.operations {
+    &__element {
+        display: flex;
+        align-items: center;
+        background-color: mediumblue;
+        padding: 20px;
+        color: whitesmoke;
+        margin: 5px;
+
+        width: 14%;
+        border-radius: 15px;
+    }
+}
+
+.element:hover {
+    background-color: darksalmon;
 }

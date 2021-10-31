@@ -76,6 +76,17 @@ body {
   color: white;
 }
 
+.menu__element:hover {
+  margin: 10px 40px;
+  border: 2px solid black;
+  padding: 20px 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 29px;
+  background-color: #634343;
+  color: white;
+  text-decoration: none;
+}
+
 .app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,5 +211,111 @@ body {
   background: #77f7de;
   color: black;
   letter-spacing: 0.1em;
+}
+
+.calculator {
+  background-color: cadetblue;
+  max-height: 600px;
+  margin-top: 10%;
+}
+
+.calculator__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+}
+
+.calculator__input {
+  padding: 30px;
+}
+
+.calculator__input input {
+  padding: 20px;
+  width: 80%;
+  color: black;
+  font-size: large;
+}
+
+.calculator__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.calculator__numbers {
+  background-color: chartreuse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+.calculator__operations {
+  background-color: darkkhaki;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+.numbers__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6969b3;
+  padding: 20px;
+  color: whitesmoke;
+  margin: 5px;
+  width: 14%;
+  border-radius: 15px;
+}
+
+.operations__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: mediumblue;
+  padding: 20px;
+  color: whitesmoke;
+  margin: 5px;
+  width: 14%;
+  border-radius: 15px;
+}
+
+.element:hover {
+  background-color: darksalmon;
 }
 /*# sourceMappingURL=style.css.map */
