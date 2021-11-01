@@ -214,8 +214,9 @@ body {
 }
 
 .calculator {
+  min-width: 1000px;
   background-color: cadetblue;
-  max-height: 600px;
+  max-height: 500px;
   margin-top: 10%;
 }
 
@@ -242,7 +243,7 @@ body {
   padding: 20px;
   width: 100%;
   color: black;
-  font-size: large;
+  font-size: 36px;
 }
 
 .calculator__buttons {
@@ -256,7 +257,7 @@ body {
 }
 
 .calculator__numbers {
-  background-color: chartreuse;
+  background-color: #22cc77;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,8 +297,14 @@ body {
   padding: 20px;
   color: whitesmoke;
   margin: 5px;
+  font-size: 36px;
   width: 14%;
   border-radius: 15px;
+}
+
+.numbers__element:hover {
+  background-color: #aa8a50;
+  cursor: pointer;
 }
 
 .operations__element {
@@ -311,6 +318,7 @@ body {
   padding: 20px;
   color: whitesmoke;
   margin: 5px;
+  font-size: 36px;
   width: 14%;
   border-radius: 15px;
 }
